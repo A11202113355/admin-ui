@@ -6,6 +6,7 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Search, SearchOffOutlined } from "@mui/icons-material";
 
 const Sidebar =() => {
     return (
@@ -40,6 +41,12 @@ const Sidebar =() => {
             <ShoppingCartIcon className="icon"/>
             <span>Orders</span>
         </li>
+        <Link to="/categories">
+            <li>
+            <Search className="icon"/>
+            <span>Categories</span>
+            </li>
+        </Link>
         <p className="title">USER</p>
         <li>
             <AccountCircleIcon className="icon"/>
